@@ -142,3 +142,12 @@ def userClick():
         #draw the x or o on screen
         drawXO(row,col)
         check_win()
+
+def reset_game():
+    global TTT, winner,XO, draw
+    time.sleep(3)
+    XO = 'x'
+    draw = False
+    game_opening()
+    winner=None
+    TTT = [[None]*3,[None]*3,[None]*3]
