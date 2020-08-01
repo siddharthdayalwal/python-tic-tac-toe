@@ -104,7 +104,7 @@ def drawXO(row,col):
         posy = height/3 + 30
     if col==3:
         posy = height/3*2 + 30
-TTT[row-1][col-1] = XO
+    TTT[row-1][col-1] = XO
     if(XO == 'x'):
         screen.blit(x_img,(posy,posx))
         XO= 'o'
