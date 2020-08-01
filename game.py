@@ -107,8 +107,8 @@ def drawXO(row,col):
 TTT[row-1][col-1] = XO
     if(XO == 'x'):
         screen.blit(x_img,(posy,posx))
-XO= 'o'
-else:
+        XO= 'o'
+    else:
         screen.blit(o_img,(posy,posx))
         XO= 'x'
     pg.display.update()
